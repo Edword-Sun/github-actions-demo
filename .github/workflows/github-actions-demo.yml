@@ -27,7 +27,7 @@ jobs:
   deploy:
     needs: build-and-push
     runs-on: ubuntu-latest
-    environment: DOCKER_USERNAME # 同样在这里指定环境
+    environment: DOCKER_USERNAME # 同样指向你的环境名称
     steps:
       - name: Deploy to Server via SSH
         uses: appleboy/ssh-action@v1.0.3
